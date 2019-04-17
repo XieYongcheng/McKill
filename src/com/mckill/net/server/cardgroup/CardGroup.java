@@ -1,4 +1,4 @@
-package com.mckill.cardgroup;
+package com.mckill.net.server.cardgroup;
 
 import java.util.ArrayList;
 import java.util.Random;

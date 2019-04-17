@@ -2,7 +2,7 @@ package com.mckill.card;
 
 import java.util.ArrayList;
 
-import com.mckill.cardgroup.Cards;
+import com.mckill.net.server.cardgroup.Cards;
 
 public class AttC extends Card {
 	private static final long serialVersionUID = -3801760299331637092L;

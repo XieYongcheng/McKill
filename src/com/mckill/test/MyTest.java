@@ -5,8 +5,8 @@ import org.junit.Test;
 import com.mckill.card.AttC;
 import com.mckill.card.BuffC;
 import com.mckill.card.BuffC.Mode;
+import com.mckill.net.server.cardgroup.CardGroup;
 import com.mckill.card.Card;
-import com.mckill.cardgroup.CardGroup;
 import com.mckill.util.Enums;
 
 public class MyTest {

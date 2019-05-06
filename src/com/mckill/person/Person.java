@@ -24,15 +24,20 @@ public class Person {
 
 	/**
 	 * 
-	 * @param c
-	 * @param p
+	 * @param c attack card
+	 * @param p defense person
 	 */
 	private void Attack(Card c, Person p) {
-
+		// TODO
 	}
 
-	private void Defence(Card c, Person p) {
-
+	/**
+	 * 
+	 * @param c attack card
+	 * @param p attack person
+	 */
+	private void Defense(Card c, Person p) {
+		// TODO
 	}
 
 	private void DoBuff() {

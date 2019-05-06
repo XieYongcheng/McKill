@@ -1,4 +1,4 @@
-package com.mckill.net.client;
+﻿package com.mckill.net.client;
 
 import java.io.IOException;
 import java.io.PrintStream;

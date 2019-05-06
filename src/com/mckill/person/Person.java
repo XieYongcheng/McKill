@@ -1,4 +1,4 @@
-package com.mckill.person;
+锘縫ackage com.mckill.person;
 
 import java.util.ArrayList;
 
@@ -55,7 +55,7 @@ public class Person {
 				break;
 			}
 		}
-	}// 执行效果
+	}// 鎵ц鏁堟灉
 
 	private int GetMoreCards() {
 		int r = 0;
@@ -78,15 +78,15 @@ public class Person {
 		}
 	}
 
-	// 当前回合
+	// 褰撳墠鍥炲悎
 	public void Turn() {
-		// 检查并执行buff
+		// 妫�鏌ュ苟鎵цbuff
 		DoBuff();
-		// 摸牌
+		// 鎽哥墝
 		int cards_num = 2;
 		client.getCards(cards_num);
 		ui.doTurn();
-		// 结束回合
+		// 缁撴潫鍥炲悎
 	}
 
 }

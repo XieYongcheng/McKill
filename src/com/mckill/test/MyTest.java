@@ -1,8 +1,9 @@
-﻿package com.mckill.test;
+package com.mckill.test;
 
 import org.junit.Test;
 
 import com.mckill.card.AttC;
+import com.mckill.card.BuffAble;
 import com.mckill.card.BuffC;
 import com.mckill.card.BuffC.Mode;
 import com.mckill.net.server.cardgroup.CardGroup;
@@ -14,7 +15,7 @@ public class MyTest {
 	public void test() throws Exception {
 		Card c = new AttC(1, "att", 2, new Card(1));
 		if (c instanceof BuffC) {
-			BuffC c1 = (BuffC) c;
+			BuffAble c1 = (BuffAble) c;
 			c1.used();
 		}
 		System.out.println(c);

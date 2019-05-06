@@ -1,17 +1,17 @@
-ï»¿package com.mckill.card;
+package com.mckill.card;
 
-public class BuffC extends Card {
+public class BuffC extends Card implements BuffAble {
 	private static final long serialVersionUID = -1079944975329702927L;
 
 	public enum Mode {
 		hp, att, attper, def, defper, fire,
 	}
-	// hp: ä¸­æ¯’, å›è¡€
-	// att: æ”»å‡»å¢(å‡)ç›Š
-	// attper: æ”»å‡»å¢(å‡)ç›Š %
-	// def: é˜²å¾¡å¢(å‡)ç›Š
-	// defper: é˜²å¾¡å¢(å‡)ç›Š %
-	// fire: ç‚¹ç‡ƒ
+	// hp: ÖĞ¶¾, »ØÑª
+	// att: ¹¥»÷Ôö(¼õ)Òæ
+	// attper: ¹¥»÷Ôö(¼õ)Òæ %
+	// def: ·ÀÓùÔö(¼õ)Òæ
+	// defper: ·ÀÓùÔö(¼õ)Òæ %
+	// fire: µãÈ¼
 
 	public enum SMode {
 		skip, moreCard,
@@ -50,24 +50,41 @@ public class BuffC extends Card {
 	}
 
 	/**
-	 * @return if return true means it's dead
+	 * @see com.mckill.card.BuffAble#used()
 	 */
+	@Override
 	public boolean used() {
 		return --times < 0;
 	}
 
+	/**
+	 * @see com.mckill.card.BuffAble#getMode()
+	 */
+	@Override
 	public Mode getMode() {
 		return mode;
 	}
 
+	/**
+	 * @see com.mckill.card.BuffAble#getSmode()
+	 */
+	@Override
 	public SMode getSmode() {
 		return smode;
 	}
 
+	/**
+	 * @see com.mckill.card.BuffAble#getNum()
+	 */
+	@Override
 	public int getNum() {
 		return num;
 	}
 
+	/**
+	 * @see com.mckill.card.BuffAble#getTimes()
+	 */
+	@Override
 	public int getTimes() {
 		return times;
 	}

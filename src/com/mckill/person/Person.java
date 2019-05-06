@@ -2,6 +2,7 @@ package com.mckill.person;
 
 import java.util.ArrayList;
 
+import com.mckill.card.BuffAble;
 import com.mckill.card.BuffC;
 import com.mckill.card.Card;
 import com.mckill.game.ui.IUI;
@@ -16,7 +17,7 @@ public class Person {
 
 	private ArrayList<Card> cards;
 	private ArrayList<BuffC> buffs;
-	private BuffC weapon;
+	private BuffAble weapon;
 
 	private IUI ui;
 
@@ -41,7 +42,7 @@ public class Person {
 	}
 
 	private void DoBuff() {
-		for (BuffC i : buffs) {
+		for (BuffAble i : buffs) {
 			switch (i.getMode()) {
 			case hp:
 
@@ -58,7 +59,7 @@ public class Person {
 
 	private int GetMoreCards() {
 		int r = 0;
-		for (BuffC i : buffs) {
+		for (BuffAble i : buffs) {
 			switch (i.getSmode()) {
 			case moreCard:
 				++r;

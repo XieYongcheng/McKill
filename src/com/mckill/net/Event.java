@@ -8,7 +8,7 @@ public class Event implements Serializable {
 	private static final long serialVersionUID = 1738774122802684054L;
 
 	public enum event {
-		requsetId, sendCard, newPerson
+		requsetId, sendCard, newPerson, sendmessage
 	}
 
 	public event e;

@@ -38,7 +38,7 @@ public class Person {
 				break;
 			}
 		}
-	}
+	}// 执行效果
 
 	private int GetMoreCards() {
 		int r = 0;
@@ -57,12 +57,13 @@ public class Person {
 
 	private void AddCards(ArrayList<Card> cards) {
 		for (Card card : cards) {
-			this.cards.add(null);
+			this.cards.add(card);
 		}
 	}
 
-	private void Turn() {
+	public void Turn() {
 		DoBuff();
 
-	}
+	}// 当前回合
+
 }

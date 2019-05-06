@@ -1,4 +1,4 @@
-package com.mckill.net;
+﻿package com.mckill.net;
 
 import java.io.Serializable;
 

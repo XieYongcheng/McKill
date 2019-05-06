@@ -1,4 +1,4 @@
-package com.mckill.net.server.cardgroup;
+ï»¿package com.mckill.net.server.cardgroup;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -18,7 +18,7 @@ public class CardGroup {
 		if (index + 1 < cards.size())
 			return cards.get(index++);
 		else {
-			// TODO ºÍÅÆ
+			// TODO å’Œç‰Œ
 			reset();
 			return get();
 		}

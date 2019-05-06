@@ -1,4 +1,4 @@
-package com.mckill.net.server;
+﻿package com.mckill.net.server;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

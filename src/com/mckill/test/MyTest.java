@@ -1,4 +1,4 @@
-package com.mckill.test;
+﻿package com.mckill.test;
 
 import org.junit.Test;
 

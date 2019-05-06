@@ -1,4 +1,4 @@
-package com.mckill.card;
+﻿package com.mckill.card;
 
 public class BowC extends Card {
 	private static final long serialVersionUID = 3666214582688193888L;

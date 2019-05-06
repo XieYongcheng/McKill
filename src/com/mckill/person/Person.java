@@ -1,4 +1,4 @@
-package com.mckill.person;
+锘縫ackage com.mckill.person;
 
 import java.util.ArrayList;
 
@@ -38,7 +38,7 @@ public class Person {
 				break;
 			}
 		}
-	}// 执行效果
+	}// 鎵ц鏁堟灉
 
 	private int GetMoreCards() {
 		int r = 0;
@@ -64,6 +64,6 @@ public class Person {
 	public void Turn() {
 		DoBuff();
 
-	}// 当前回合
+	}// 褰撳墠鍥炲悎
 
 }

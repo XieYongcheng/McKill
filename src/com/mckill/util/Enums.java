@@ -1,4 +1,4 @@
-package com.mckill.util;
+﻿package com.mckill.util;
 
 import java.util.ArrayList;
 

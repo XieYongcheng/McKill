@@ -1,4 +1,4 @@
-package com.mckill.net.server.cardgroup;
+﻿package com.mckill.net.server.cardgroup;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.mckill.card;
+﻿package com.mckill.card;
 
 public class DefC extends Card {
 	private static final long serialVersionUID = 434924928691678406L;

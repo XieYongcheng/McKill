@@ -1,4 +1,4 @@
-package com.mckill.card;
+ï»¿package com.mckill.card;
 
 public class BuffC extends Card {
 	private static final long serialVersionUID = -1079944975329702927L;
@@ -6,12 +6,12 @@ public class BuffC extends Card {
 	public enum Mode {
 		hp, att, attper, def, defper, fire,
 	}
-	// hp: ÖĞ¶¾, »ØÑª
-	// att: ¹¥»÷Ôö(¼õ)Òæ
-	// attper: ¹¥»÷Ôö(¼õ)Òæ %
-	// def: ·ÀÓùÔö(¼õ)Òæ
-	// defper: ·ÀÓùÔö(¼õ)Òæ %
-	// fire: µãÈ¼
+	// hp: ä¸­æ¯’, å›è¡€
+	// att: æ”»å‡»å¢(å‡)ç›Š
+	// attper: æ”»å‡»å¢(å‡)ç›Š %
+	// def: é˜²å¾¡å¢(å‡)ç›Š
+	// defper: é˜²å¾¡å¢(å‡)ç›Š %
+	// fire: ç‚¹ç‡ƒ
 
 	public enum SMode {
 		skip, moreCard,

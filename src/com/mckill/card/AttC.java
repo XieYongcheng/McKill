@@ -1,16 +1,16 @@
-package com.mckill.card;
+ï»¿package com.mckill.card;
 
 import java.util.ArrayList;
 
 import com.mckill.net.server.cardgroup.Cards;
 
 public class AttC extends Card implements AttackAble {
-	private static final long serialVersionUID = -3801760299331637092L;
-	private int num; // ÊıÖµ Ò»°ã´æ·Å¹¥»÷ÊıÖµ
-	private ArrayList<Card> defs; // ¿ÉÓÃÓÚ·ÀÓùµÄ¿¨
-	private boolean is_to_all; // ÊÇ·ñ¶ÔÈ«²¿Íæ¼ÒÔì³É¹¥»÷
+	private static final long serialVersionUID = -3801760299331637092L; // ç”¨äºåºåˆ—åŒ–
+	private int num; // æ•°å€¼ ä¸€èˆ¬å­˜æ”¾æ”»å‡»æ•°å€¼
+	private ArrayList<Card> defs; // å¯ç”¨äºé˜²å¾¡çš„å¡
+	private boolean is_to_all; // æ˜¯å¦å¯¹å…¨éƒ¨ç©å®¶é€ æˆæ”»å‡»
 
-	// ¹¹Ôì 
+	// æ„é€  
 	public AttC(int cardId, String name, int num, ArrayList<Card> defs, boolean is_to_all) {
 		super(cardId, name);
 		this.num = num;
@@ -18,7 +18,7 @@ public class AttC extends Card implements AttackAble {
 		this.is_to_all = is_to_all;
 	}
 
-	// ¹¹Ôì 
+	// æ„é€  
 	public AttC(int cardId, String name, int num, ArrayList<Card> defs) {
 		super(cardId, name);
 		this.num = num;
@@ -26,7 +26,7 @@ public class AttC extends Card implements AttackAble {
 		this.is_to_all = false;
 	}
 
-	// ¹¹Ôì 
+	// æ„é€  
 	public AttC(int cardId, String name, int num, Card def, boolean is_to_all) {
 		super(cardId, name);
 		this.num = num;
@@ -35,7 +35,7 @@ public class AttC extends Card implements AttackAble {
 		this.is_to_all = is_to_all;
 	}
 
-	// ¹¹Ôì 
+	// æ„é€  
 	public AttC(int cardId, String name, int num, Card def) {
 		super(cardId, name);
 		this.num = num;
@@ -44,7 +44,7 @@ public class AttC extends Card implements AttackAble {
 		this.is_to_all = false;
 	}
 
-	// ¹¹Ôì 
+	// æ„é€  
 	public AttC(int cardId, String name, int num) {
 		super(cardId, name);
 		this.num = num;
@@ -53,7 +53,7 @@ public class AttC extends Card implements AttackAble {
 		this.is_to_all = false;
 	}
 
-	// ¹¹Ôì 
+	// æ„é€  
 	public AttC(int cardId, int num, ArrayList<Card> defs, boolean is_to_all) {
 		super(cardId);
 		this.num = num;

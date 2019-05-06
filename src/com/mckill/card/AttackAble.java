@@ -1,16 +1,16 @@
-package com.mckill.card;
+ï»¿package com.mckill.card;
 
 import java.util.ArrayList;
 
 public interface AttackAble {
 
-	// »ñÈ¡¹¥»÷ÊıÖµ ´«µİÈËÎïÁ¦Á¿
+	// è·å–æ”»å‡»æ•°å€¼ ä¼ é€’äººç‰©åŠ›é‡
 	int getNum(int person_str);
 
-	// »ñÈ¡¿ÉÓÃÓÚ·ÀÓùµÄ¿¨
+	// è·å–å¯ç”¨äºé˜²å¾¡çš„å¡
 	ArrayList<Card> getDefs();
 
-	// ·µ»Øis_to_all
+	// è¿”å›is_to_all
 	boolean isIs_to_all();
 
 }

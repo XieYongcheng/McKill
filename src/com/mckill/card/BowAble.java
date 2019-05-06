@@ -1,4 +1,4 @@
-package com.mckill.card;
+﻿package com.mckill.card;
 
 public interface BowAble {
 	// attack

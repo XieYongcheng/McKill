@@ -1,4 +1,4 @@
-package com.mckill.card;
+﻿package com.mckill.card;
 
 import com.mckill.card.BuffC.Mode;
 import com.mckill.card.BuffC.SMode;

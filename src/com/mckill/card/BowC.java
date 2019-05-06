@@ -1,6 +1,6 @@
-﻿package com.mckill.card;
+package com.mckill.card;
 
-public class BowC extends Card {
+public class BowC extends Card implements BowAble {
 	private static final long serialVersionUID = 3666214582688193888L;
 	int num;
 
@@ -11,6 +11,15 @@ public class BowC extends Card {
 	public BowC(int cardId, String name, int num) {
 		super(cardId, name);
 		this.num = num;
+	}
+
+	/**
+	 * @see com.mckill.card.BowAble#Attack(com.mckill.card.Card)
+	 */
+	@Override
+	public int Attack(Card c) {
+		//TODO:
+		return num;
 	}
 
 	@Override

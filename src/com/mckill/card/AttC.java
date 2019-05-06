@@ -1,15 +1,16 @@
-锘縫ackage com.mckill.card;
+package com.mckill.card;
 
 import java.util.ArrayList;
 
 import com.mckill.net.server.cardgroup.Cards;
 
-public class AttC extends Card {
+public class AttC extends Card implements AttackAble {
 	private static final long serialVersionUID = -3801760299331637092L;
-	private int num;
-	private ArrayList<Card> defs;
-	private boolean is_to_all;
+	private int num; // 数值 一般存放攻击数值
+	private ArrayList<Card> defs; // 可用于防御的卡
+	private boolean is_to_all; // 是否对全部玩家造成攻击
 
+	// 构造 
 	public AttC(int cardId, String name, int num, ArrayList<Card> defs, boolean is_to_all) {
 		super(cardId, name);
 		this.num = num;
@@ -17,6 +18,7 @@ public class AttC extends Card {
 		this.is_to_all = is_to_all;
 	}
 
+	// 构造 
 	public AttC(int cardId, String name, int num, ArrayList<Card> defs) {
 		super(cardId, name);
 		this.num = num;
@@ -24,6 +26,7 @@ public class AttC extends Card {
 		this.is_to_all = false;
 	}
 
+	// 构造 
 	public AttC(int cardId, String name, int num, Card def, boolean is_to_all) {
 		super(cardId, name);
 		this.num = num;
@@ -32,6 +35,7 @@ public class AttC extends Card {
 		this.is_to_all = is_to_all;
 	}
 
+	// 构造 
 	public AttC(int cardId, String name, int num, Card def) {
 		super(cardId, name);
 		this.num = num;
@@ -40,6 +44,7 @@ public class AttC extends Card {
 		this.is_to_all = false;
 	}
 
+	// 构造 
 	public AttC(int cardId, String name, int num) {
 		super(cardId, name);
 		this.num = num;
@@ -48,6 +53,7 @@ public class AttC extends Card {
 		this.is_to_all = false;
 	}
 
+	// 构造 
 	public AttC(int cardId, int num, ArrayList<Card> defs, boolean is_to_all) {
 		super(cardId);
 		this.num = num;
@@ -55,14 +61,27 @@ public class AttC extends Card {
 		this.is_to_all = is_to_all;
 	}
 
-	public int getNum() {
+	/**
+	 * @see com.mckill.card.AttackAble#getNum()
+	 */
+	@Override
+	public int getNum(int att) {
+		//TODO: do something here
 		return num;
 	}
 
+	/**
+	 * @see com.mckill.card.AttackAble#getDefs()
+	 */
+	@Override
 	public ArrayList<Card> getDefs() {
 		return defs;
 	}
 
+	/**
+	 * @see com.mckill.card.AttackAble#isIs_to_all()
+	 */
+	@Override
 	public boolean isIs_to_all() {
 		return is_to_all;
 	}

@@ -1,4 +1,4 @@
-﻿package com.mckill.net.client;
+package com.mckill.net.client;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -24,5 +24,9 @@ public class Client {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void getCards(int cards_num) {
+
 	}
 }

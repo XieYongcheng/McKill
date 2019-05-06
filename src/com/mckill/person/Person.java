@@ -1,9 +1,11 @@
-锘縫ackage com.mckill.person;
+package com.mckill.person;
 
 import java.util.ArrayList;
 
 import com.mckill.card.BuffC;
 import com.mckill.card.Card;
+import com.mckill.game.ui.IUI;
+import com.mckill.net.client.Client;
 
 public class Person {
 	private int UId;
@@ -16,11 +18,20 @@ public class Person {
 	private ArrayList<BuffC> buffs;
 	private BuffC weapon;
 
-	private void Attack(Person p) {
+	private IUI ui;
+
+	private Client client;
+
+	/**
+	 * 
+	 * @param c
+	 * @param p
+	 */
+	private void Attack(Card c, Person p) {
 
 	}
 
-	private void Defence(Person p) {
+	private void Defence(Card c, Person p) {
 
 	}
 
@@ -38,7 +49,7 @@ public class Person {
 				break;
 			}
 		}
-	}// 鎵ц鏁堟灉
+	}// 执行效果
 
 	private int GetMoreCards() {
 		int r = 0;
@@ -61,9 +72,15 @@ public class Person {
 		}
 	}
 
+	// 当前回合
 	public void Turn() {
+		// 检查并执行buff
 		DoBuff();
-
-	}// 褰撳墠鍥炲悎
+		// 摸牌
+		int cards_num = 2;
+		client.getCards(cards_num);
+		ui.doTurn();
+		// 结束回合
+	}
 
 }

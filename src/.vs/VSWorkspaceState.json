@@ -3,8 +3,16 @@
     "",
     "\\com",
     "\\com\\mckill",
-    "\\com\\mckill\\card"
+    "\\com\\mckill\\game",
+    "\\com\\mckill\\game\\ui",
+    "\\com\\mckill\\net",
+    "\\com\\mckill\\net\\client",
+    "\\com\\mckill\\net\\server",
+    "\\com\\mckill\\net\\server\\cardgroup",
+    "\\com\\mckill\\person",
+    "\\com\\mckill\\test",
+    "\\com\\mckill\\util"
   ],
-  "SelectedNode": "\\com\\mckill\\game",
+  "SelectedNode": "\\com\\mckill\\util\\Enums.java",
   "PreviewInSolutionExplorer": false
 }

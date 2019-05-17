@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-import com.mckill.person.Person;
+import com.mckill.game.person.Person;
 
 public class Game {
 

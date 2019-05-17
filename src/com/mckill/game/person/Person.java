@@ -1,4 +1,4 @@
-﻿package com.mckill.person;
+﻿package com.mckill.game.person;
 
 import java.util.ArrayList;
 
